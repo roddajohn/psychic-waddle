@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% set active_page = "create" %}
+
+{% block content %}
+  <br>
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4 text-left">
+      <div class="panel panel-default">
+	<div class="panel-heading">
+	  <center>
+	    <h4>Sign Up for Open House</h4>
+	  </center>
+	</div>
+	<div class="panel-body">
+	  <form role="form" method="POST" action="">
+	    {{ create_form.hidden_tag() }}
+	    {{ macros.render_field(create_form.fname, 'First Name') }}
+	    {{ macros.render_field(create_form.lname, 'Last Name') }}
+	    {{ macros.render_field(create_form.nickname, 'Nickname') }}
+	    {{ macros.render_field(create_form.username, 'Username') }}
+	    {{ macros.render_field(create_form.password, 'Password') }}
+	    {{ macros.render_field(create_form.password2, 'Repeat Password') }}
+	    {{ macros.render_field(create_form.email, 'Email') }}
+	    {{ macros.render_field(create_form.organizations, 'Organizations') }}
+	    {{ macros.render_field(create_form.days, 'Days you are signing up for') }}
+	    {{ macros.render_field(create_form.osis, 'OSIS') }}
+	    {{ macros.render_field(create_form.four_digit, 'Four Digit') }}
+	    {{ macros.render_field(create_form.submit, 'Create') }}
+	  </form>
+	</div>
+    </div>
+  </div>
+  <div class="col-sm-4"></div>
+{% endblock %}

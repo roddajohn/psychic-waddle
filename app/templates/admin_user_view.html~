@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% set active_page = "users" %}
+
+{% block content %}
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <center>
+      <h1>{{ macros.render_name(u) }}</h1>
+    <br>
+    <br>
+    <table class="table">
+      <tr>
+	<td>First Name</td><td>{{ u.fname }}</td>
+      </tr>
+      <tr>
+	<td>Last Name</td><td>{{ u.lname }}</td>
+      </tr>
+      <tr>
+	<td>Nickname</td><td>{{ u.nickname }}</td>
+      </tr>
+      <tr>
+	<td>Email</td><td>{{ u.email }}</td>
+      </tr>
+      <tr>
+	<td>OSIS</td><td>{{ u.osis }}</td>
+      </tr>
+      <tr>
+	<td>Four Digit</td><td>{{ u.four_digit }}</td>
+      </tr>
+      <tr>
+	<td>Organizations</td>
+	<td>
+	  {% for organization in u.organizations.split(',') %}{{ macros.render_label(organizations, organization)}} {% endfor %}
+	</td>
+      </tr>
+      <tr>
+	<td>Attending Wednesday</td>
+	<td>
+	  {% if u.wednesday_excused %}
+	    Excused
+	  {% else %}
+	    {{ macros.render_boolean(u.wednesday) }}
+	    <a class="btn btn-primary pull-right {% if u.wednesday_excused %}active{% endif %}" href="{{ url_for('toggle_wednesday_excused', user_id = u.id) }}">Excused</a>
+	  {% endif %}
+	</td>
+      </tr>
+      <tr>
+	<td>Attending Thursday</td>
+	<td>
+	  {% if u.thursday_excused %}
+	    Excused
+	  {% else %}
+	    {{ macros.render_boolean(u.thursday) }}
+	    <a class="btn btn-primary pull-right {% if u.wednesday_excused %}active{% endif %}" href="{{ url_for('toggle_wednesday_excused', user_id = u.id) }}">Excused</a>
+
+	  {% endif %}
+	</td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <div class="col-sm-2"></div>
+  <center>
+
+{% endblock %}
+

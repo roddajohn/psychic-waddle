@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+{% import "macros.html" as macros %}
+
+{% set title = title | default('Open House') %}
+
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename="img/favicon.png") }}">
+    
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    
+    <style>
+      /* Remove the navbar's default margin-bottom and rounded borders */ 
+      .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      }
+      
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {
+      height: auto;
+      }
+      
+      /* Set gray background color and 100% height */
+      .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+      }
+      
+      /* Set black background color, white text and some padding */
+      footer {
+      background-color: #555;
+      color: white;
+      margin: 15px;
+      padding: 15px;
+      }
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+      .sidenav {
+      height: auto;
+      padding: 15px;
+      }
+      .row.content {height:auto;} 
+      }
+
+      .alert {      
+      margin: 20px 0;
+      }
+      .jumbotron {
+      background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    
+    {% set navigation_bar = [
+    ('index', 'index', 'Home', 'all'),
+    ('user_view', 'user_view', 'Your Information', 'user'),
+    ('dropdown',
+      (('users', 'All Users'),
+      ('users_wednesday_checked_in', 'Checked In Wednesday'),
+      ('users_wednesday_checked_out', 'Checked Out Wednesday'),
+      ('users_thursday_checked_in', 'Checked In Thursday'),
+      ('users_thursday_checked_out', 'Checked Out Thursday'),
+      ('users_admins', 'Administrators')),
+      'Users', 'admin'),
+    ('dropdown',
+      (('wednesday_checkin', 'Wednesday Checkin'),
+      ('wednesday_checkout', 'Wednesday Checkout'),
+      ('thursday_checkin', 'Thursday Checkin'),
+      ('thursday_checkout', 'Thursday Checkout')), 'Checkins and Checkouts', 'admin'),
+    ('dropdown',
+      (('wednesday_counter', 'Wednesday Counter'),
+      ('thursday_counter', 'Thursday Counter')),
+      'Counters', 'admin')
+    ]
+    %}
+    {% set active_page = active_page | default('index') %}
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+	  </button>
+	  <a class="navbar-brand" href="{{ url_for('index') }}">Open House</a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav">
+	    {% for href, id, caption, permission in navigation_bar %}
+	      {% if href == "dropdown" and ((user and user.check_permission(permission)) or permission == 'all') %}
+		<li
+		   {% for href_d, caption_d in id if href_d == active_page %}
+		     class="active"
+		   {% endfor %}
+		   >
+		   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">{{ caption | e }}<span class="caret"></span>
+		   </a>
+		   
+		   <ul class="dropdown-menu">
+		     {% for href_d, caption_d in id %}
+		       <li><a href="{{ url_for(href_d) }}">{{ caption_d | e }}</a></li>
+		     {% endfor %}
+		   </ul>
+		</li>
+	      {% else %}
+		{% if (user and user.check_permission(permission)) or permission == 'all' %}
+		  <li {% if href == active_page %} class="active" {% endif %}>
+		    <a href="{{ url_for(href) }}">{{ caption | e }}</a>
+		  </li>
+		{% endif %}
+	      {% endif %}
+	    {% endfor %}
+	    
+	  </ul>
+	  <ul class="nav navbar-nav navbar-right">
+	    {% if not user %}
+	      <li {% if active_page == "create" %}class="active"{% endif %}><a href="{{ url_for('create') }}"><span class="glyphicon glyphicon-user"></span> Sign up for Open House</a></li>
+            <li {% if active_page == "login" %}class="active"{% endif %}><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	  {% else %}
+	      <li><a href="{{ url_for('logout') }}">Logout</a></li>
+	  {% endif %}
+	</div>
+      </div>
+    </nav>
+    <div class="row content">
+      <div class="col-sm-12">
+	<div class="container-fluid">
+	  {% with messages = get_flashed_messages() %}
+	    {% if messages %}
+	      {% for message in messages %}
+		<div class="alert alert-info fade in alert-fixed-top">
+		  <a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  {{ message }}
+		</div>
+		
+	      {% endfor %}
+	    {% endif %}
+	  {% endwith %}
+	  {% block content %}{% endblock %}
+	</div>
+	{% block content_special %}{% endblock %}
+      </div>
+    </div>
+    <footer class="container-fluid text-center">
+      <p>&copy; Rodda John -- Version 1.0.0</p>
+    </footer>
+  </body>
+</html>

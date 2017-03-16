@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% set active_page = "thursday_checkin" %}
+
+{% block content %}
+  <div class="col-sm-5"></div>
+  <div class="col-sm-2">
+    <center>
+      <h1>Thursday Checkin</h1>
+    <br>
+    <br>
+    <form action="" method="POST">
+      {{ four_digit_form.hidden_tag() }}
+      {{ macros.render_field(four_digit_form.search_field, "Four Digit") }}
+      {{ macros.render_field(four_digit_form.method, "Action") }}
+      {{ macros.render_field(four_digit_form.submit, "Enter") }}
+    </form>
+    </center>
+  </div>
+  <div class="col-sm-5"></div>
+  <center>
+
+    <script>document.getElementById("search_field").focus()</script>
+
+{% endblock %}
+

@@ -1,0 +1,6 @@
+from app import models, db
+import sys
+
+organization = sys.args[1]
+
+print organization

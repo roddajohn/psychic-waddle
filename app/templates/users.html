@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% set active_page = "users" %}
+
+{% block content %}
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <center>
+      <h1>Users</h1>
+    </center>
+    <center>
+      <div class="row">
+	<div class="col-sm-6">
+	  <h3>Number of Volunteers for Wednesday</h3>
+	  <br>
+	  <h4>{{ wednesday_volunteers }}</h4>
+	</div>
+	<div class="col-sm-6">
+	  <h3>Number of Volunteers for Thursday</h3>
+	  <br>
+	  <h4>{{ thursday_volunteers }}</h4>
+	</div>
+      </div>
+    </center>
+    <br>
+    <br>
+    <form class="form-inline pull-right" role="form" method="POST" action="">
+      {{ search_form.hidden_tag() }}
+      {% if search_form.search_field.errors %}
+	<div class="form-group has-error">
+      {% else %}
+	<div class="form-group">
+      {% endif %}
+      <label for="search_field">Search for a user:</label>
+      {% if search_field == "default" %}
+	{{ search_form.search_field(class_ = "form-control", value="") }}
+      {% else %}
+	{% if search_field == "arista" %}
+	  {{ search_form.search_field(class_ = "form-control", value='ARISTA') }}
+	{% elif search_field == "big_sibs" %}
+	  {{ search_form.search_field(class_ = "form-control", value='Big Sibs') }}
+	{% elif search_field == "red_cross" %}
+	  {{ search_form.search_field(class_ = "form-control", value='Red Cross') }}
+	{% elif search_field == "key_club" %}
+	  {{ search_form.search_field(class_ = "form-control", value='Key Club') }}
+	{% else %}
+	  {{ search_form.search_field(class_ = "form-control", value=search_field) }}
+	{% endif %}
+      {% endif %}
+      {{ search_form.submit(class_ = "btn btn-primary", value="Search") }}
+      {% if search_form.search_field.errors %}
+	<span class="help-block">{{ search_form.search_field.errors[0] }}</span>
+      {% endif %}
+	</div>
+    </form>
+    <br>
+    <br>
+
+    <table class="table table-bordered">
+      <tr>
+	<td>Name</td>
+	<td>Four Digit</td>
+	<td>Wednesday</td>
+	<td>Thursday</td>
+	<td>Organizations</td>
+	<td>Actions</td>
+      </tr>
+      {% for u in users.items %}
+	<tr>
+	  <td>{{ macros.render_name(u) }}</td>
+	  <td>{{ u.four_digit }}</td>
+	  <td>
+	    {% if u.wednesday_excused %}
+	      Excused
+	    {% else %}
+	      {{ macros.render_boolean(u.wednesday) }}
+	    {% endif %}
+	  </td>
+	  <td>
+	    {% if u.thursday_excused %}
+	      Excused
+	    {% else %}
+	      {{ macros.render_boolean(u.thursday) }}
+	    {% endif %}
+	  </td>
+	  <td>
+	    {% for organization in u.organizations.split(',') %}{{ macros.render_label(organizations, organization)}} {% endfor %}
+	  </td>
+	  <td>
+	    <a class="btn btn-primary" href="{{ url_for('admin_user_view', user_id = u.id) }}">More Information</a>
+	  </td>
+      {% endfor %}
+    </table>
+    {{ macros.render_pagination_search_field(users, 'users', search_field) }}
+  </div>
+  <div class="col-sm-2"></div>
+  <center>
+
+{% endblock %}
+

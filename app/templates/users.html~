@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% set active_page = "user_view" %}
+
+{% block content %}
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <center>
+      <h1>Users</h1>
+    </center>
+    <br>
+    <br>
+    <table class="table table-bordered">
+      <tr>
+	<td>Name</td>
+	<td>Four Digit</td>
+	<td>Wednesday</td>
+	<td>Thursday</td>
+	<td>Actions</td>
+      </tr>
+      {% for u in users.items %}
+	<tr>
+	  <td>{{ macros.render_name(u) }}</td>
+	  <td>{{ u.four_digit }}</td>
+	  <td>
+	    {% if u.wednesday_excused %}
+	      Excused
+	    {% else %}
+	      {{ macros.render_boolean(u.wednesday_excused) }}
+	    {% endif %}
+	  </td>
+	  <td>
+	    {% if u.wednesday_excused %}
+	      Excused
+	    {% else %}
+	      {{ macros.render_boolean(u.wednesday_excused) }}
+	    {% endif %}
+
+      {% endfor %}
+    </table>
+  </div>
+  <div class="col-sm-2"></div>
+  <center>
+
+{% endblock %}
+

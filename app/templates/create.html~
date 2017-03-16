@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% set active_page = "create" %}
+
+{% block content %}
+  <br>
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4 text-left">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+	<center>
+	  <h4>Create an Account</h4>
+	  <br>
+	</center>
+      </div>
+      <div class="panel-body">
+	<p><!--All Stuyvesant ARISTA members are welcome (and encouraged to create a tutor account).-->
+	  All Stuyvesant students who want to be paired with a tutor, please create an account!
+	</p>
+	<form role="form" method="POST" action="">
+	  {{ create_form.hidden_tag() }}
+	  {% if create_form.fname.errors %}
+	    <div class="form-group has-error">
+	  {% else %}
+	    <div class="form-group">
+	  {% endif %}
+	  <label for="fname">First Name:</label>
+	  {{ create_form.fname(class_="form-control", value_=create_form.fname.data) }}
+	  {% if create_form.fname.errors %}
+	    <span class="help-block">{{ create_form.fname.errors[0] }}</span>
+	  {% endif %}
+	  
+	    </div> <!-- closes the username-form-group div -->
+	    {% if create_form.lname.errors %}
+	      <div class="form-group has-error">
+	    {% else %}
+	      <div class="form-group">
+	    {% endif %}
+	    <label for="lname">Last Name:</label>
+	    {{ create_form.lname(class_="form-control", value_=create_form.lname.data) }}
+	    {% if create_form.lname.errors %}
+	      <span class="help-block">{{ create_form.lname.errors[0] }}</span>
+	    {% endif %}
+	      </div>
+	      
+	      {% if create_form.username.errors %}
+		<div class="form-group has-error">
+	      {% else %}
+		<div class="form-group">
+	      {% endif %}
+	      <label for="username">Username: </label>
+	      {{ create_form.username(class_="form-control", value_=create_form.username.data) }}
+	      {% if create_form.username.errors %}
+		<span class="help-block">{{ create_form.username.errors[0] }} </span>
+	      {% endif %}
+		</div>
+		
+		{% if create_form.password.errors %}
+		  <div class="form-group has-error">
+		{% else %}
+		  <div class="form-group">
+		{% endif %}
+		<label for="password">Password: </label>
+		{{ create_form.password(class_="form-control", value_=create_form.password.data) }}
+		{% if create_form.password.errors %}
+		  <span class="help-block">{{ create_form.password.errors[0] }}</span>
+		{% endif %}
+		  </div>
+		  
+		  {% if create_form.password2.errors %}
+		    <div class="form-group has-error">
+		  {% else %}
+		    <div class="form-group">
+		  {% endif %}
+		  <label for="password2">Retype Password: </label>
+		  {{ create_form.password2(class_="form-control", value_=create_form.password2.data) }}
+		  {% if create_form.password2.errors %}
+		    <span class="help-block">{{ create_form.password2.errors[0] }}</span>
+		  {% endif %}
+		    </div>
+		    
+		    {% if create_form.email.errors %}
+		      <div class="form-group has-error">
+		    {% else %}
+		      <div class="form-group">
+		    {% endif %}
+		    <label for="email">Email: </label>
+		    {{ create_form.email(class_="form-control", value_=create_form.email.data) }}
+		    {% if create_form.email.errors %}
+		      <span class="help-block">{{ create_form.email.errors[0] }}</span>
+		    {% endif %}
+		      </div>
+		      
+		      {% if create_form.four_digit.errors %}
+			<div class="form-group has-error">
+		      {% else %}
+			<div class="form-group">
+		      {% endif %}
+		      <label for="four_digit">Four Digit ID</label> (if you don't have one, go <a href="{{ ''.join(['http://', 'id.stuysu.org']) }}"> here</a>)<label>:</label>
+		      {{ create_form.four_digit(class_="form-control", value_=create_form.four_digit.data) }}
+		      {% if create_form.four_digit.errors %}
+			<span class="help-block">{{ create_form.four_digit.errors[0] }}</span>
+		      {% endif %}
+			</div>
+
+			{% if create_form.osis.errors %}
+			  <div class="form-group has-error">
+			{% else %}
+			  <div class="form-group">
+			{% endif %}
+			<label for="osis">OSIS: </label>
+			{{ create_form.osis(class_="form-control", value_=create_form.osis.data) }}
+			{% if create_form.osis.errors %}
+			  <span class="help-block">{{ create_form.osis.errors[0] }}</span>
+			{% endif %}
+			  </div>
+
+			  
+			  {% if create_form.guidance_counselor.errors %}
+			    <div class="form-group has-error">
+			  {% else %}
+			    <div class="form-group">
+			  {% endif %}
+			  <label for="guidance_counselor">Guidance Counselor: </label>
+			  {{ create_form.guidance_counselor(class_="form-control", value_=create_form.guidance_counselor.data)}}
+			  {% if create_form.guidance_counselor.errors %}
+			    <span class="help-block">{{ create_form.guidance_counselor.errors[0] }}</span>
+			  {% endif %}
+			    </div>
+			    
+			    <!--		    {% if create_form.tutor_tutee.errors %}
+						    <div class="form-group has-error">
+						  {% else %}
+						    <div class="form-group">
+						  {% endif %}
+						  <label for="tutor_tutee">Account Type: </label>
+						  <br>
+						  {% for subfield in create_form.tutor_tutee %}
+						    {{ subfield }}
+						    {{ subfield.label }}
+						    <br>
+						    w		    {% endfor %}
+						    {% if create_form.tutor_tutee.errors %}
+						      <span class="help-block">{{ create_form.tutor_tutee.errors[0] }}</span>
+						    {% endif %}
+						    </div>
+						    <!-- Needs to be continued -->
+						    {{ create_form.submit(class_="btn btn-primary", value_="Create") }}
+						    
+	</form>
+	</div>
+	</div>
+	</div>
+	<div class="col-sm-4"></div>
+      {% endblock %}

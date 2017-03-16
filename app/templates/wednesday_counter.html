@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% set active_page = "wednesday_counter" %}
+
+{% block content %}
+  <div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <center>
+      <h1>Wednesday Counter</h1>
+    <br>
+    <br>
+    <div class="row">
+    <div class="col-sm-4">
+      <h2>Checked In</h2>
+      <br>
+      <h1>{{ checked_in }}</h1>
+    </div>
+    <div class="col-sm-4">
+      <h2>Checked Out</h2>
+      <br>
+      <h1>{{ checked_out }}</h1>
+    </div>
+    <div clas="col-sm-4">
+      <h2>Students in Building</h2>
+      <br>
+      <h1>{{ checked_in - checked_out }}</h1>
+    </div>
+    </div>
+    </center>
+  </div>
+  <div class="col-sm-2"></div>
+  </div>
+  <center>
+
+    <script>document.getElementById("search_field").focus()</script>
+
+{% endblock %}
+

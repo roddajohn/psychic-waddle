@@ -1,0 +1,132 @@
+{% macro render_label(base_list, id) %}
+  {% for element in base_list %}
+    {% if element[0] == id %}
+      {{ element[1] }}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro render_pagination_search_field(pagination, endpoint, search_field) %}
+
+  <ul class="pagination">
+
+    {% if pagination.has_prev %}
+      <li>
+        <a href="{{ url_for(endpoint, page=pagination.prev_num, search_field = search_field) }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="disabled">
+          <span aria-hidden="true">&laquo;</span>
+      </li>
+    {% endif %}
+
+    {% for p in pagination.iter_pages(left_edge=1, left_current=2, right_current=3, right_edge=1) %}
+      {% if p %}
+        {% if p != pagination.page %}
+          <li>
+            <a href="{{ url_for(endpoint, page=p, search_field = search_field) }}">{{ p }}</a>
+          </li>
+        {% else %}
+          <li class="active">
+            <a href="{{ url_for(endpoint, page=p, search_field = search_field) }}">{{ p }}</a>
+          </li>
+        {% endif %}
+      {% else %}
+        <li class="disabled">
+          <span class="ellipsis">&hellip;</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    {% if pagination.has_next %}
+      <li>
+        <a href="{{ url_for(endpoint, page=pagination.next_num, search_field = search_field) }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="disabled">
+        <span aria-hidden="true">&raquo;</span>
+      </li>
+    {% endif %}
+
+  </ul>
+
+{% endmacro %}
+
+{% macro render_boolean(boolean) %}
+  {% if boolean %}
+    Yes
+  {% else %}
+    No
+  {% endif %}
+{% endmacro %}
+
+{% macro render_name(user) %}
+  {{ user.fname }} {% if user.nickname and not user.nickname == "" %}({{ user.nickname }}){% endif %} {{ user.lname }}</a>
+{% endmacro %}
+
+{% macro render_field(field, label) %}
+  {% if field.type == "DateTimeField" %}
+    {% if field.errors %}
+      <div class="form-group has-error">
+    {% else %}
+      <div class="form-group">
+    {% endif %}
+    <label for="start_time">{{ label }}:</label>
+    <div class="input-group date" id="datetimepicker_{{ field.id }}">
+      {{ field(class_="form-control", value_=field.data) }}
+      <span class="input-group-addon">
+	<span class="glyphicon glyphicon-calendar"></span>
+      </span>
+    </div>
+    <script type="text/javascript">
+      $(function () { $('#datetimepicker_{{ field.id }}').datetimepicker({
+      format: 'MM/DD/YYYY'
+      }); });
+    </script>
+    {% if field.errors %}
+      <span class="help-block">{{ field.errors[0] }}</span>
+    {% endif %}
+    
+      </div>
+  {% elif field.type == "SubmitField" %}
+    {{ field(class_="btn btn-primary btn-group-justified", value=label) }}
+  {% elif field.type == "MultiCheckboxField" %}
+    <label for="{{ label }}">{{ label }}: </label>
+    <br>
+    <div class="container">
+    {% for subfield in field %}
+      <div class="checkbox">
+	{{ subfield }}
+	{{ subfield.label }}
+	<br>
+      </div>
+    {% endfor %}
+      </div>
+
+  {% elif field.type == "RadioField" %}
+    <label for="{{ label }}">{{ label }}: </label>
+    <br>
+    {% for subfield in field %}
+      {{ subfield }}
+      {{ subfield.label }}
+      <br>
+    {% endfor %}
+  {% else %}
+    {% if field.errors %}
+      <div class="form-group has-error">
+    {% else %}
+      <div class="form-group">
+    {% endif %}
+    <label for="fname">{{ label }}:</label>
+    {{ field(class_="form-control", value_=field.data) }}
+    {% if field.errors %}
+      <span class="help-block">{{ field.errors[0] }}</span>
+    {% endif %}
+      </div>
+  {% endif %}
+
+{% endmacro %}

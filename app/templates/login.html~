@@ -1,0 +1,52 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% set active_page = "login" %}
+
+{% block content %}
+  <br>
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4 text-left">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+	<center>
+	  <h4>Login</h4>
+	</center>
+      </div>
+      <div class="panel-body">
+	<form role="form" action="" method="POST">
+	  {{ login_form.hidden_tag() }}
+	  {% if login_form.username.errors %}
+	    <div class="form-group has-error" id="username_login-form-group">
+	  {% else %}
+      <div class="form-group" id="username_login-form-group">
+    {% endif %}
+    <label for="username_login">Username:</label>
+    {{ login_form.username(class_="form-control", value_=login_form.username.data) }}
+    {% if login_form.username.errors %}
+      <span class="help-block" id="username_login-help-block">{{ login_form.username.errors[0] }}</span>
+    {% endif %}
+      </div> <!-- closes the username-form-group div -->
+      {% if login_form.password.errors %}
+	<div class="form-group has-error" id="password_login-form-group">
+      {% else %}
+	<div class="form-group" id="password_login-form-group">
+      {% endif %}
+      <label for="password_login">Password:</label>
+      {{ login_form.password(class_="form-control", value_=login_form.password.data) }}
+      {% if login_form.password.errors %}
+	<span class="help-block" id="password_login-help-block">{{ login_form.password.errors[0] }}</span>
+      {% endif %}
+	</div>
+	<a href="{{ url_for('forgot_password') }}">Forgot your Password?</a>
+	<br>
+	<br>
+	{{ login_form.submit(class_="btn btn-primary", value_="Login") }}
+	</form>
+	</div>
+	</div>
+	</div>
+  <div class="col-sm-4"></div>
+{% endblock %}
+

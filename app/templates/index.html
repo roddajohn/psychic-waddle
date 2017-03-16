@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content_special %}
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome!</h1>
+      <br>
+      <br>
+      <p>
+	Open House will be on <b>Wednesday, October 5th from 4:00 pm - 8:00 pm</b> and <b>Thursday, October 6th from 4:30 pm - 8:00 pm</b>.
+	<br>
+	<br>
+	ARISTA members are required to volunteer on Wednesday, unless previously excused.
+	<br>
+	<br>
+	Big Sibs members are required to volunteer on both days, unless previously excused.
+	<br>
+	<br>
+	If you are an ARISTA or Big Sibs member, you account is already created.  Your username is your four digit id and your password is your OSIS.
+	<br>
+	<br>
+	If you are not in ARISTA or Big Sibs, <a href="{{ url_for('create') }}">please create an account</a>!
+	<br>
+	<br>
+	Please report to the first floor on 4:00 on Wednesday and 4:30 on Thursday.
+      </p>
+    </div>
+  </div> 
+
+{% endblock %}
+
+

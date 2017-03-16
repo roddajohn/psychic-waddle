@@ -1,0 +1,29 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% set active_page = "login" %}
+
+{% block content %}
+  <br>
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4 text-left">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+	<center>
+	  <h4>Login</h4>
+	</center>
+      </div>
+      <div class="panel-body">
+	<form role="form" action="" method="POST">
+	  {{ login_form.hidden_tag() }}
+	  {{ macros.render_field(login_form.username, 'Username') }}
+	  {{ macros.render_field(login_form.password, 'Password') }}
+	  {{ macros.render_field(login_form.submit, 'Login') }}
+	</form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4"></div>
+{% endblock %}
+
