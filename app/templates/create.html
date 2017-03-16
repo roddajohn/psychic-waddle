@@ -15,6 +15,7 @@
 	</div>
 	<div class="panel-body">
 	  <form role="form" method="POST" action="">
+	    <p>Since there is only one day of open house, we are automatically signing you up for Tuesday upon creation of this account, you may cancel this once the account is created.</p>
 	    {{ create_form.hidden_tag() }}
 	    {{ macros.render_field(create_form.fname, 'First Name') }}
 	    {{ macros.render_field(create_form.lname, 'Last Name') }}
@@ -24,7 +25,6 @@
 	    {{ macros.render_field(create_form.password2, 'Repeat Password') }}
 	    {{ macros.render_field(create_form.email, 'Email') }}
 	    {{ macros.render_field(create_form.organizations, 'Organizations') }}
-	    {{ macros.render_field(create_form.days, 'Days you are signing up for') }}
 	    {{ macros.render_field(create_form.osis, 'OSIS') }}
 	    {{ macros.render_field(create_form.four_digit, 'Four Digit') }}
 	    {{ macros.render_field(create_form.submit, 'Create') }}

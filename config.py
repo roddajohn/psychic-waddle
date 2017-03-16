@@ -20,7 +20,8 @@ ORGANIZATIONS = [('arista', 'ARISTA'),
                  ('key_club', 'Key Club')]
 
 ORGANIZATIONS_FOR_SIGN_UP = [('red_cross', 'Red Cross'),
-                             ('key_club', 'Key Club')]
+                             ('key_club', 'Key Club'),
+                             ('arista', 'ARISTA')]
 
 DAYS = [('wed', 'Wednesday, October 5'),
         ('thurs', 'Thursday, October 6')]

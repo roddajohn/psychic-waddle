@@ -10,15 +10,10 @@
     </center>
     <center>
       <div class="row">
-	<div class="col-sm-6">
-	  <h3>Number of Volunteers for Wednesday</h3>
+	<div class="col-sm-12">
+	  <h3>Number of Volunteers for Tuesday</h3>
 	  <br>
 	  <h4>{{ wednesday_volunteers }}</h4>
-	</div>
-	<div class="col-sm-6">
-	  <h3>Number of Volunteers for Thursday</h3>
-	  <br>
-	  <h4>{{ thursday_volunteers }}</h4>
 	</div>
       </div>
     </center>
@@ -60,8 +55,7 @@
       <tr>
 	<td>Name</td>
 	<td>Four Digit</td>
-	<td>Wednesday</td>
-	<td>Thursday</td>
+	<td>Tuesday</td>
 	<td>Organizations</td>
 	<td>Actions</td>
       </tr>
@@ -74,13 +68,6 @@
 	      Excused
 	    {% else %}
 	      {{ macros.render_boolean(u.wednesday) }}
-	    {% endif %}
-	  </td>
-	  <td>
-	    {% if u.thursday_excused %}
-	      Excused
-	    {% else %}
-	      {{ macros.render_boolean(u.thursday) }}
 	    {% endif %}
 	  </td>
 	  <td>

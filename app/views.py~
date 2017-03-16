@@ -28,7 +28,8 @@ def create():
                                permissions = '')
         new_user.set_password(create_form.password.data)
         new_user.add_permission('user')
-        new_user.wednesday = True
+        new_user.wednesday = 'wed' in create_form.days.data
+        new_user.thursday = 'thurs' in create_form.days.data
         new_user.wednesday_excused = False
         new_user.thursday_excused = False
         new_user.wednesday_status = 0

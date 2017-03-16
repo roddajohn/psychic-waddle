@@ -44,33 +44,27 @@
 	    {% else %}
 	      <a href="{{ url_for('add_organization', organization = 'key_club') }}" class="btn btn-primary">Key Club</a>     
 	    {% endif %}
+
+	    {% if user.check_organization('arista') %}
+	     <a href="{{ url_for('remove_organization', organization = 'arista') }}" class="btn btn-primary active">ARISTA</a>
+	    {% else %}
+	      <a href="{{ url_for('add_organization', organization = 'arista') }}" class="btn btn-primary">ARISTA</a>     
+	    {% endif %}
+
 	  </div>
 	</td>
       </tr>
       <tr>
-	<td>Attending Wednesday</td>
+	<td>Attending Tuesday</td>
 	<td>
 	  {% if user.wednesday_excused %}
 	    Excused
 	  {% else %}
 	    {{ macros.render_boolean(user.wednesday) }}
 	    {% if not user.check_organization('arista') and not user.check_organization('big_sibs') %}
-	      <a class="pull-right btn btn-primary {% if user.wednesday %}active{% endif %}" href="{{ url_for('toggle_wednesday') }}">Toggle Wednesday</a>
+	      <a class="pull-right btn btn-primary {% if user.wednesday %}active{% endif %}" href="{{ url_for('toggle_wednesday') }}">Toggle Tuesday</a>
 	  {% endif %}
 	{% endif %}
-	</td>
-      </tr>
-      <tr>
-	<td>Attending Thursday</td>
-	<td>
-	  {% if user.thursday_excused %}
-	    Excused
-	  {% else %}
-	    {{ macros.render_boolean(user.thursday) }}
-	    {% if not user.check_organization('big_sibs') %}
-	      <a class="pull-right btn btn-primary {% if user.thursday %}active{% endif %}" href="{{ url_for('toggle_thursday') }}">Toggle Thursday</a>
-	    {% endif %}
-	  {% endif %}
 	</td>
       </tr>
     </table>

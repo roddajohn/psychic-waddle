@@ -35,7 +35,7 @@
 	</td>
       </tr>
       <tr>
-	<td>Attending Wednesday</td>
+	<td>Attending Tuesday</td>
 	<td>
 	  {% if u.wednesday_excused %}
 	    Excused
@@ -43,19 +43,6 @@
 	  {% else %}
 	    {{ macros.render_boolean(u.wednesday) }}
 	    <a class="btn btn-primary pull-right" href="{{ url_for('toggle_wednesday_excused', user_id = u.id) }}">Excused</a>
-	  {% endif %}
-	</td>
-      </tr>
-      <tr>
-	<td>Attending Thursday</td>
-	<td>
-	  {% if u.thursday_excused %}
-	    Excused
-
-	    <a class="btn btn-primary pull-right active" href="{{ url_for('toggle_thursday_excused', user_id = u.id) }}">Excused</a>
-	  {% else %}
-	    {{ macros.render_boolean(u.thursday) }}
-	    <a class="btn btn-primary pull-right" href="{{ url_for('toggle_thursday_excused', user_id = u.id) }}">Excused</a>
 	  {% endif %}
 	</td>
       </tr>

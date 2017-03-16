@@ -66,21 +66,14 @@
     ('user_view', 'user_view', 'Your Information', 'user'),
     ('dropdown',
       (('users', 'All Users'),
-      ('users_wednesday_checked_in', 'Checked In Wednesday'),
-      ('users_wednesday_checked_out', 'Checked Out Wednesday'),
-      ('users_thursday_checked_in', 'Checked In Thursday'),
-      ('users_thursday_checked_out', 'Checked Out Thursday'),
+      ('users_wednesday_checked_in', 'Checked In Tuesday'),
+      ('users_wednesday_checked_out', 'Checked Out Tuesday'),
       ('users_admins', 'Administrators')),
       'Users', 'admin'),
     ('dropdown',
-      (('wednesday_checkin', 'Wednesday Checkin'),
-      ('wednesday_checkout', 'Wednesday Checkout'),
-      ('thursday_checkin', 'Thursday Checkin'),
-      ('thursday_checkout', 'Thursday Checkout')), 'Checkins and Checkouts', 'admin'),
-    ('dropdown',
-      (('wednesday_counter', 'Wednesday Counter'),
-      ('thursday_counter', 'Thursday Counter')),
-      'Counters', 'admin')
+      (('wednesday_checkin', 'Tuesday Checkin'),
+      ('wednesday_checkout', 'Tuesday Checkout')), 'Checkins and Checkouts', 'admin'),
+     ('wednesday_counter', 'wednesday_counter', 'Tuesday Counter', 'admin')
     ]
     %}
     {% set active_page = active_page | default('index') %}
@@ -152,7 +145,7 @@
       </div>
     </div>
     <footer class="container-fluid text-center">
-      <p>&copy; Rodda John -- Version 1.0.0</p>
+      <p>ARISTA Executive Council -- Version 1.0.0</p>
     </footer>
   </body>
 </html>
