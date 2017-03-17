@@ -75,6 +75,8 @@ class CreateForm(Form):
     organizations = MultiCheckboxField('organizations', choices = app.config['ORGANIZATIONS_FOR_SIGN_UP'])
     days = MultiCheckboxField('days', choices = app.config['DAYS'])
 
+    grades = RadioField('grade', choices = app.config['GRADES'], validators=[DataRequired()])
+
     four_digit = IntegerField('four_digit', validators=[DataRequired(), NumberRange(min = 1000, max = 5999)])
     submit = SubmitField()
 
@@ -98,6 +100,10 @@ class CreateForm(Form):
         user = models.User.query.filter_by(osis = self.osis.data).first()
         if user:
             self.osis.errors.append("This id is already registered")
+            isError = True
+
+        if self.grades.data == 'freshmen' or self.grades.data == 'sophomore':
+            self.grades.errors.append('Unfortunately, you must be an upperclassmen to volunteer, thanks for your interest')
             isError = True
 
         return not isError

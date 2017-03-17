@@ -106,8 +106,14 @@
       </div>
     {% endfor %}
       </div>
-
-  {% elif field.type == "RadioField" %}
+    
+    {% elif field.type == "RadioField" %}
+      {% if field.errors %}
+	<div class="form-group has-error">
+      {% else %}
+	<div class="form-group">
+      {% endif %}
+      
     <label for="{{ label }}">{{ label }}: </label>
     <br>
     {% for subfield in field %}
@@ -115,6 +121,11 @@
       {{ subfield.label }}
       <br>
     {% endfor %}
+        {% if field.errors %}
+      <span class="help-block">{{ field.errors[0] }}</span>
+    {% endif %}
+
+	</div>
   {% else %}
     {% if field.errors %}
       <div class="form-group has-error">

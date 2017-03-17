@@ -26,4 +26,9 @@ ORGANIZATIONS_FOR_SIGN_UP = [('red_cross', 'Red Cross'),
 DAYS = [('wed', 'Wednesday, October 5'),
         ('thurs', 'Thursday, October 6')]
 
+GRADES = [('freshmen', 'Freshman'),
+          ('sophomore', 'Sophomore'),
+          ('junior', 'Junior'),
+          ('senior', 'Senior')]
+
 ELEMENTS_PER_PAGE = 10
