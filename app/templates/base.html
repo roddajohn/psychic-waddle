@@ -68,12 +68,18 @@
       (('users', 'All Users'),
       ('users_wednesday_checked_in', 'Checked In Tuesday'),
       ('users_wednesday_checked_out', 'Checked Out Tuesday'),
+      ('users_thursday_checked_in', 'Checked In Wednesday'),
+      ('users_thursday_checked_out', 'Checked Out Wednesday'),
       ('users_admins', 'Administrators')),
       'Users', 'admin'),
     ('dropdown',
       (('wednesday_checkin', 'Tuesday Checkin'),
-      ('wednesday_checkout', 'Tuesday Checkout')), 'Checkins and Checkouts', 'admin'),
-     ('wednesday_counter', 'wednesday_counter', 'Tuesday Counter', 'admin')
+      ('wednesday_checkout', 'Tuesday Checkout'),
+      ('thursday_checkin', 'Wednesday Checkin'),
+      ('thursday_checkout', 'Wednesday Checkout')),
+      'Checkins and Checkouts', 'admin'),
+    ('wednesday_counter', 'wednesday_counter', 'Tuesday Counter', 'admin'),
+    ('thursday_counter', 'thursday_counter', 'Wednesday Counter', 'admin')
     ]
     %}
     {% set active_page = active_page | default('index') %}

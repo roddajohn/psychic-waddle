@@ -25,9 +25,6 @@ class User(db.Model):
     timestamp_wednesday_checked_in = db.Column(db.DateTime, index = True, unique = False)
     timestamp_wednesday_checked_out = db.Column(db.DateTime, index = True, unique = False)
 
-    timestamp_thursday_checked_in = db.Column(db.DateTime, index = True, unique = False)
-    timestamp_thursday_checked_out = db.Column(db.DateTime, index = True, unique = False)
-
     wednesday_excused = db.Column(db.Boolean, index = True, unique = False)
     thursday_excused = db.Column(db.Boolean, index = True, unique = False)
 

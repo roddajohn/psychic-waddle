@@ -1,232 +1,260 @@
-Four Digit,OSIS,Name,Wednesday Signed Up,Thursday Signed Up,Wednesday Excused,Thursday Excused,Wednesday Checkin,Wednesday Checkout,Thursday Checkin,Thursday Checkout,Wednesday Action,Thursday Action
-3439,233665322,Rodda John,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-3003,233853118,Sonia Epstein,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3036,207203977,Joel Ye,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3041,205775091,Namra Zulfiqar,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3047,207979634,Danielle Eisenman,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3055,205528748,Natalie Zhu,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3071,207694811,Nancy  Cao,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3074,205448350,Yvonne Chan,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3087,227871670,Andrea Ma,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3105,233660794,Raphael Kirou,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3115,206868184,Catriona Breen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3117,205529290,Karen Chen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3121,205744170,Sarah Yoon,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3124,204087878,Jackie  Garber,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3128,206059537,Eliriana Lleshi,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3129,216179945,Nina  Uzoigwe,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3130,206791501,Yuki Lin,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3132,207038605,En (Claire) Jin,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-3133,205436256,Edward Lee,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3136,206559148,Dora Gelerinter,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3150,205949332,Joanne Ha,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3158,205987621,Daniel Gendler,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3159,206104622,Manish Saha,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3174,206060204,Kaia Waxenberg,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3177,206102907,Haley Zeng,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3182,206105256,Noshin Choudhury,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-3183,221485451,Jongyoul Lee,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3207,207444068,Janny Chen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3218,205669500,Brian Yang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3219,219968328,Siam Muquit,True,True,False,False,False,True,False,True,STRIKE,DO NOT CREDIT
-3232,209450428,Shamaul  Dilmohamed ,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3238,216074450,Mitch Choi,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3240,205317217,Khandker  Habib,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3247,205776925,Louisa Cornelis,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3252,205937246,Alvin Zhu,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3253,205617988,Jennifer Yu,True,True,False,False,True,True,False,True,DO NOT STRIKE,DO NOT CREDIT
-3254,232505396,Sharon Lin,True,False,True,True,False,False,False,False,DO NOTHING,DO NOTHING
-3265,220410492,Brandon Zhang,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3269,205907744,Rishad  Karim,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3272,209391937,Griffin  Strout,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3287,203743414,Adam  Wickham,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3301,207408196,Annie Li,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3314,205449267,Nicole Cheng,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3316,207723651,Richard Wang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3336,206087595,Katrina Wong,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-3339,209079409,Anastasiya  Bolgova,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3343,233940147,Sze Ting (Kathy) Lau,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3353,215806316,Felix Phillips,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-3376,207253444,Jessy Feng Han,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3383,206123051,Simon Chen,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3389,205930175,Lucy Li,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3402,205530884,Arya Firoozan,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-3404,214288748,Emily Lin,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3408,205178437,Giselle Garcia,True,True,False,False,True,True,False,True,DO NOT STRIKE,DO NOT CREDIT
-3415,233929264,Bayle  Smith-Salzberg,True,False,True,True,False,False,False,False,DO NOTHING,DO NOTHING
-3428,205757263,Janet Zhang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3432,205691058,Wesley Lee,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3435,233859628,Sebastian Dittgen,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3451,207277229,Evelyn Gotlieb,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3463,205660020,Yujie Fu,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-3465,209157544,Zicheng Zhen,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3466,211108683,Elisa Hung,True,False,False,False,False,False,False,False,STRIKE,DO NOTHING
-3495,206349169,Nancy Liang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3500,207027301,Jason Mohabir,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3506,223971961,Han Oo,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-3510,205467277,Julia Ingram,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3513,205704547,Shaf Chowdhury,True,False,False,False,False,True,False,False,STRIKE,DO NOTHING
-3527,206385072,Melanie Chow,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3530,205770191,Jessica Titensky,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3541,206007288,Joyce Lei,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3560,206984171,Geena Jung,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3583,205704034,Stephanie Chang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3586,233914241,Nikolaos Ziozis,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3600,225852334,Shantanu Jha,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3611,207373655,Jodi Ng,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3621,225257658,Zachary Ginsberg,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3629,206213647,Lauren Moy,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3635,205789837,Suki Yip,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3640,205459365,Lydia Choi,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-3645,205812860,Nadia Filanovsky,True,False,False,False,True,True,True,True,DO NOT STRIKE,DO NOTHING
-3648,215884131,Zuhra Tukhtamisheva,True,True,False,False,False,True,True,True,STRIKE,DO NOT CREDIT
-3662,206932667,Anthony Liang,True,False,False,False,True,True,True,True,DO NOT STRIKE,DO NOTHING
-3671,205784283,Olivia Kusio,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-3674,206813289,Wendy  Li,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3680,206373318,Kimberly  Ho,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3683,207670662,Roy Kim,True,False,False,False,True,False,False,False,STRIKE,DO NOTHING
-3714,214934549,Jing  Zhang,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3729,206007353,Richard Lin,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3735,205817067,Shupti Biswas,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3743,231974072,Nancy Yang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3744,205654023,Lucy Wang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3753,206583296,Sumaita  Mahmood,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-3757,206981813,Henry Newell,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3760,207320722,Madeleine Ostergaard ,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-3767,205347297,Nalanda Sharadjaya,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3775,207913500,Stiven Peter,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3778,206374167,Yuan Yue,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3779,205798804,Makoto Manheim,True,True,False,False,True,True,False,True,DO NOT STRIKE,DO NOT CREDIT
-3784,215860495,Zuha Mohiuddin,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3789,233665538,Winston Venderbush,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3795,205933617,Paulina Ruta,True,True,True,True,False,False,False,False,DO NOTHING,DO NOTHING
-3796,220873301,Annie  Chen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3799,232538454,Hoi Lam Lau,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3825,208552596,Michelle  Lin,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3841,205781503,Brandon Chin,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3844,205744188,Stephanie Yoon,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3855,206932659,Sylvia Zhong,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3858,209062249,Kamila  Radjabova ,True,True,False,False,False,False,True,True,STRIKE,DO NOT CREDIT
-3862,207652074,Jessica Yang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3863,206669327,Bryan Zhong,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3865,207165432,Jie Yu  Xu,True,True,False,False,True,True,False,True,DO NOT STRIKE,DO NOT CREDIT
-3867,203639703,Lawrence Kwong,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3868,205936370,Lawrence Liu,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3876,205675804,Sarah Creighton,True,False,True,True,False,False,False,False,DO NOTHING,DO NOTHING
-3883,207979998,Nicholas Ng,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3890,208053686,Courtney Chiu,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3896,205738925,Carmen Chen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3912,221348733,Xinyi Gu,True,True,False,False,True,True,False,True,DO NOT STRIKE,DO NOT CREDIT
-3921,207192022,Olivia Gallager,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3927,205608185,Jessica  Sparacio,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3930,207689829,Jan Wojcik,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3931,207038381,Grace Stempel,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3942,205999865,Jannatul Ahmed,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3960,205821028,Mohammed Ullah,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-3982,208053140,Ken Li,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3988,206087363,Aisharja Mojumdar,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-3989,205970171,Sharon Chao,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4004,208410977,Rachel Zhang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4014,207193376,Vivien Lee,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-4018,208667675,Carol Pan ,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4025,207808056,Anne Lee,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4035,207474545,Andrew Chen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4046,208681817,Charlie Reeder,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4070,207694779,Nicholas  Li,True,False,False,False,True,True,True,True,DO NOT STRIKE,DO NOTHING
-4095,216384123,Dawei Huang,True,False,False,False,False,False,False,False,STRIKE,DO NOTHING
-4098,208667436,Joyce Wu,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4101,229168604,Minji  Park ,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4157,236053203,Michael Kaydin ,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4163,207436874,Liu Joseph,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4175,205976897,Marta Pawluczuk,True,False,False,False,True,False,False,False,STRIKE,DO NOTHING
-4193,209853738,Karina Ionkina,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-4197,219812922,Yedoh Kang,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4207,236041521,Donia Tung,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4223,207345117,Derek Tran,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-4232,207695149,George Zheng,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4233,208365999,Janice Tjan,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4242,207723305,Mark Shafran,True,True,False,False,True,False,False,True,STRIKE,DO NOT CREDIT
-4248,208053587,Sarah Kim,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4262,235887171,Venus  Nnadi,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-4275,219839321,Chenyang Ju,True,False,False,False,True,True,True,True,DO NOT STRIKE,DO NOTHING
-4283,207530171,Ava Liu,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4288,206995417,Gillian  Sutliff,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4294,219959764,Zilin  Guo,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4312,207242058,Manahal Tabassum,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4318,208300905,Vincent Jiang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4324,208947739,Jacob Goldman,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4351,208339028,Irene Lam,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4353,209556489,Sandra  Ho,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4356,207160268,Jacqueline Woo,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4360,207203951,Rachael  Chen ,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4386,215608829,Wenxuan(Queenie) Xiang,True,True,False,False,True,True,False,True,DO NOT STRIKE,DO NOT CREDIT
-4410,209852953,Maiko Sein,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4411,229080502,Tiffany Chen,True,True,False,True,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4422,209434315,Yuning (Amy) Ren ,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4425,207456757,Michelle Zhu,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4428,207501735,Elijah Karshner,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4443,207455585,Shivasuryan Vummidi,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4446,208976704,Greg Huang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4453,208688002,Luola Chen,True,True,True,True,False,False,True,True,DO NOTHING,DO NOTHING
-4461,208337451,Karen Chen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4474,236053138,Ray Jones,True,True,False,False,True,True,True,False,DO NOT STRIKE,DO NOT CREDIT
-4476,207021411,Benedict Ho,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4480,208027334,Kelly Wang,True,False,False,False,True,True,False,True,DO NOT STRIKE,DO NOTHING
-4483,208584086,Jacqueline Xu,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-4488,206907263,Grace Cuenca,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4490,214355539,Michelle Moe,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4507,207198813,Jessica Tao,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4510,207268145,Ved Patel,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4515,208571414,Noah Tang,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4532,207476284,Anne Chen,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4545,207069717,Marcin Hajduczek,True,True,False,False,True,True,False,False,DO NOT STRIKE,DO NOT CREDIT
-4557,207765165,Mansour Elsharawy,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4566,236075651,Julian Rubinfien,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4567,236073441,Chloe Lee,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4568,208304055,JeongWoo (Rachel) Kwon,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4583,207689928,Selina Zou,True,True,False,False,True,True,False,True,DO NOT STRIKE,DO NOT CREDIT
-4599,209064732,Jenny Gao,True,False,False,False,False,True,False,False,STRIKE,DO NOTHING
-4617,208882951,Anya Wang,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4638,207240458,Emily  Lee,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-4639,208696708,Doreen Chin,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4642,207700485,Mahesh Saha,True,False,False,False,False,True,False,False,STRIKE,DO NOTHING
-4643,208667634,Sabrine Benzakour,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4676,214778227,Zhi Lin,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4682,231264003,Alexandra Fomina,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4689,236001418,Zilin(Tim) Wang,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4696,206902447,Raniyan Zaman,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4717,207538695,Kevin Li,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4719,208131920,Kelly Luo,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4722,208392431,Tasfia Bashar,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4727,208928564,Nowshin Islam,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4734,209040369,Jessie Cheng,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4746,207091471,Jordan Chan,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4761,208857276,Eelia Shaw,True,False,False,False,False,True,False,False,STRIKE,DO NOTHING
-4764,208512509,Barnett Zhao,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4769,208349753,Shruthi Venkata,True,False,False,False,False,False,False,False,STRIKE,DO NOTHING
-4776,209806553,Anna  Pacheco,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4786,236041026,Sophie Feng,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4799,207503020,Kejal  Doshi,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4803,208981035,Marie Ivantechenko,True,True,True,False,False,False,False,True,DO NOTHING,STRIKE
-4846,208434720,Sabrina Wen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4853,207695461,Calvin  Liang ,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4862,216365403,Sarah Chen,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4867,205867666,Jan Stefan Kowalski,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4870,208092221,Tiffany Moi,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4876,207647355,Andrew Lee,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4877,209067677,Mika Simoncelli,True,False,True,False,False,False,True,True,DO NOTHING,DO NOTHING
-4879,207315854,Hillary Hao,True,False,True,True,False,True,False,False,DO NOTHING,DO NOTHING
-4883,207042730,Madeline (Maddie) Wong,True,False,True,True,False,False,False,False,DO NOTHING,DO NOTHING
-4884,210846838,Michael Xu,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4890,209257112,Maya Mitrasinovic,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4900,207474925,Faith Sanchez,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4909,207764804,Nadean Alnajjar,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4924,209018415,Ryan Siu,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4935,207248311,Helen Zhuo,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4953,233149079,Michael Lee,True,True,False,False,True,True,True,True,DO NOT STRIKE,CREDIT
-4957,209380591,Jessica Wu,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4965,217331818,Mithila Farin,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4972,235968443,Saloni Majmudar ,True,True,True,False,False,False,True,True,DO NOTHING,DO NOT STRIKE
-4973,219832482,Ran Yoo,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4989,208735340,Sara Ng,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
-4997,208365890,Anish Shenoy,True,False,False,False,True,True,False,False,DO NOT STRIKE,DO NOTHING
+Rachel,Zhang,rzhang7@stuy.edu,4004,208410977
+Vivien,Lee,vlee@stuy.edu,4014,207193376
+Carol,Pan ,chocodra@gmail.com ,4018,208667675
+Anne,Lee,alee19@stuy.edu,4025,207808056
+Charlie,Reeder,cr.nyc.2000@gmail.com,4046,208681817
+Joyce,Wu,jwu26@stuy.edu,4098,208667436
+Minji ,Park ,mpark1@stuy.edu,4101,229168604
+Michael,Kaydin ,Michaelkaydin@gmail.com,4157,236053203
+Liu,Joseph,jliu16@stuy.edu,4163,207436874
+Marta,Pawluczuk,mpawluczuk@stuy.edu,4175,205976897
+Karina,Ionkina,kionkina@stuy.edu,4193,209853738
+Yedoh,Kang,ykang@stuy.edu,4197,219812922
+Donia,Tung,doniatung32@gmail.com,4207,236041521
+Derek,Tran,derek.tran173@gmail.com,4223,207345117
+George,Zheng,gzheng3@stuy.edu,4232,207695149
+Janice,Tjan,Janjan.tjan@gmail.com,4233,208365999
+Mark,Shafran,Mshafran@stuy.edu,4242,207723305
+Venus ,Nnadi,vnnadi@stuy.edu,4262,235887171
+Chenyang,Ju,judaniel4@gmail.com,4275,219839321
+Ava,Liu,avaliu3851@gmail.com,4283,207530171
+Gillian ,Sutliff,gillian.sutliff@gmail.com,4288,206995417
+Zilin ,Guo,zguo1@stuy.edu,4294,219959764
+Manahal,Tabassum,manahalt2072@gmail.com,4312,207242058
+Vincent,Jiang,vjiang1@stuy.edu,4318,208300905
+Jacob,Goldman,jgoldman@stuy.edu,4324,208947739
+Irene,Lam,ilam1@stuy.edu,4351,208339028
+Sandra ,Ho,Sandraho1216@gmail.com,4353,209556489
+Jacqueline,Woo,jwoo@stuy.edu,4356,207160268
+Rachael ,Chen ,rchen11@stuy.edu ,4360,207203951
+Wenxuan,Xiang,queeniexiang@gmail.com,4386,215608829
+Maiko,Sein,msein@stuy.edu,4410,209852953
+Tiffany,Chen,tchen8@stuy.edu,4411,229080502
+Yuning,Ren ,Amyren123@gmail.com,4422,209434315
+Michelle,Zhu,mcz.8741@gmail.com,4425,207456757
+Elijah,Karshner,ekarshner@stuy.edu,4428,207501735
+Karen,Chen,kchen6600@gmail.com,4461,208337451
+Benedict,Ho,hoben404@gmail.com,4476,207021411
+Kelly,Wang,kellywang10@gmail.com,4480,208027334
+Jacqueline,Xu,jackiestuy@gmail.com,4483,208584086
+Grace,Cuenca,gracecuenca1016@gmail.com,4488,206907263
+Michelle,Moe,moemichelle1000@gmail.com,4490,214355539
+Jessica,Tao,jtao@stuy.edu,4507,207198813
+Ved,Patel,vedanuj1@gmail.com,4510,207268145
+Noah,Tang,tangnoah@gmail.com,4515,208571414
+Anne,Chen,ann3ch3n@gmail.com,4532,207476284
+Marcin,Hajduczek,mhajduczek@stuy.edu,4545,207069717
+Chloe,Lee,Chloe.cy.lee@gmail.com,4567,236073441
+Jenny,Gao,jgao658@gmail.com,4599,209064732
+Emily ,Lee,emilylee254@gmail.com,4638,207240458
+Doreen,Chin,Dchin1059@gmail.com,4639,208696708
+Mahesh,Saha,sahamahesh20@gmail.com,4642,207700485
+Sabrine,Benzakour,sbenzakour@stuy.edu,4643,208667634
+Zilin,Wang,vivalavida1424@gmail.com,4689,236001418
+Kevin,Li,kevinstuy324@gmail.com,4717,207538695
+Kelly,Luo,kluo2@stuy.edu,4719,208131920
+Nowshin,Islam,Nowshin.stuy@gmail.com,4727,208928564
+Jessie,Cheng,mcheng2@stuy.edu,4734,209040369
+Eelia,Shaw,shaweelia@gmail.com,4761,208857276
+Barnett,Zhao,bzhao1@stuy.edu,4764,208512509
+Shruthi,Venkata,svenkata@stuy.edu,4769,208349753
+Kejal ,Doshi,kdoshi@stuy.edu,4799,207503020
+Marie,Ivantechenko,mmivantechenko@gmail.com,4803,208981035
+Sabrina,Wen,sabrinawn253@gmail.com,4846,208434720
+Calvin ,Liang ,cliang4@stuy.edu,4853,207695461
+Sarah,Chen,schen34@stuy.edu,4862,216365403
+Jan Stefan,Kowalski,janstefankowalski@gmail.com,4867,205867666
+Tiffany,Moi,tiffanymoi6@gmail.com,4870,208092221
+Andrew,Lee,origamial1234@gmail.com,4876,207647355
+Mika,Simoncelli,msimoncelli@stuy.edu,4877,209067677
+Hillary,Hao,h.haostuy@gmail.com,4879,207315854
+Madeline,Wong,mwmwline@gmail.com,4883,207042730
+Michael,Xu,michael.xu000@gmail.com,4884,210846838
+Maya,Mitrasinovic,maya.pachepa@gmail.com,4890,209257112
+Faith,Sanchez,falsanchez7@gmail.com,4900,207474925
+Nadean,Alnajjar,nadeanalnajjar412@gmail.com,4909,207764804
+Helen,Zhuo,helenzhuo2018@gmail.com,4935,207248311
+Michael,Lee,mlee13@stuy.edu,4953,233149079
+Jessica,Wu,jessicawu49260@gmail.com,4957,209380591
+Mithila,Farin,purplemithila10@gmail.com,4965,217331818
+Saloni,Majmudar ,Salonim2305@gmail.com,4972,235968443
+Ran,Yoo,ryoo@stuy.edu,4973,219832482
+Sara,Ng,sng5@stuy.edu,4989,208735340
+Anish,Shenoy,ashenoy@stuy.edu,4997,208365890
+Hanna,Yang,hyang6@stuy.edu,5787,210848289
+Woosuk,Lee,wlee10@stuy.edu,5302,221483225
+Joseph,Lee,jlee51@stuy.edu,5140,234922565
+Haiying,Weng,hweng1@stuy.edu,4117,222759771
+Nten,Nyiam,nnyiam90@stuy.edu,1472,209871623
+Jerry,Ye,jerry1ye10@gmail.com,5120,209186725
+Katie,Wu,kwu11@stuy.edu,5451,214318859
+Rohan,Ahammed,ahammedrohan1@gmail.com,5095,213313513
+Amanda,Piasecki,apiasecki@stuy.edu,5449,238956916
+Jenna,Foo,jfoo@stuy.edu,5961,212435432
+Angela,Peng,peng.angela01@gmail.com,5789,219829298
+Jared,Asch,jasch@stuy.edu,5859,214240285
+Summer,Jiang,SummerAJiang@gmail.com,5011,213797020
+Archi,Das,adas3@stuy.edu,5311,209021120
+Vivian,Zhou,vivzhou8@gmail.com,4045,208919761
+Stanley,Lin,slin14@stuy.edu,4896,236586327
+Cecilia,Vogler,cvogler@stuy.edu,4784,208413898
+Ben,Weinstein,bweinstein@stuy.edu,4712,231910886
+Leo,Fleissig,leofleissig@gmail.com,5776,238979033
+Michelle,Lai,mlai@stuy.edu,5402,209059252
+Jocelyn,Tang,jtang5@stuy.edu,5522,209071109
+Henry,Zheng,hzheng3@stuy.edu,4437,209135490
+Benjamin,Platt,bsplatt@gmail.com,5249,211567979
+Colin,Hosking,cmh1651292@gmail.com,5387,238978332
+Nishmi,Abeyweera,nishmiabeyweera22@gmail.com,5049,208713461
+Peter,Jin,pjin1@stuy.edu,5263,209167725
+Xinyue,Nam,namxinyue@gmail.com,5264,208662759
+Scott,Abramowitz,sabramowitz@stuy.edu,5171,238970222
+Eliza,Spinna,espinna@stuy.edu,5283,214473530
+Celina,Liu,cliu6@stuy.edu,5668,208820274
+Kenny,Wong,kwong16@stuy.edu,5493,209284223
+Natalie,Lu,nlu@stuy.edu,4454,206860405
+Jane,Rhee,jrhee1@stuy.edu,5963,208959932
+Emily,Hur,ehur@stuy.edu,5673,216193219
+Shannon,Lau,shannonlau00@gmail.com,4419,207435827
+Claire,Liu,cliu5@stuy.edu,5304,208942532
+Lisa,Eng,leng3@stuy.edu,4491,208130971
+Joshua,Weiner,joshuaweinernyc@gmail.com,5072,214308108
+Jennifer,Yu,yujennifer2388@gmail.com,4421,208882977
+Stella,Ng,saitokenstella19@gmail.com,5767,208744516
+Connie,Lei,clei1@stuy.edu,4849,208348060
+Klaire,Geller,kgeller@stuy.edu,5080,214520652
+Alexander,Radu,aradu@stuy.edu,5872,209180272
+Christine,Jegarl,cjegarl@stuy.edu,4950,221417736
+Kevin,Zhang,kzhang9@stuy.edu,5565,213787112
+Amit,Narang,Anarang1@stuy.edu,5831,231851098
+Benjamin,Shen,bshen@stuy.edu,4299,207233743
+Crystal,Wang,cwang4@stuy.edu,5974,209563600
+Isaac,Chasen,isaacchasen10@gmail.com,5023,207142159
+Jennifer,Lee,jlee53@stuy.edu,5612,208900977
+Anne,George,ageorge1@stuy.edu,4986,207241530
+Amanda,Li,ali17@stuy.edu,5082,214548240
+Nikki,Daniels,nikki.daniels01@gmail.com,5615,214494940
+Chaewon,Park,cpark2@stuy.edu,5405,200721728
+Khyber,Sen,kkysen@gmail.com,4976,205312234
+Shayan,Chowdhury,schowdhury8@stuy.edu,5467,219578119
+Arpita,Nag,anag@stuy.edu,4610,214874679
+Stacey,Xue,sxue@stuy.edu,5956,208707596
+Alexa,Valentino,avalentino@stuy.edu,5404,239002504
+Ivan,Zhang,izhang1@stuy.edu,5917,214521304
+Kelli,Hu,khu2@stuy.edu,5860,226167021
+Angela,Sun,asun2@stuy.edu,5220,208820357
+Kayla,Lew,klew@stuy.edu,5153,209052646
+Justin,Wang,jwang19@stuy.edu,5722,208960104
+Xue Qing,Li,xli2@stuy.edu,5297,209152495
+Ziqi,Guo,zguo@stuy.edu,4811,219959798
+Emily,Wu,ewu3@stuy.edu,4009,207292244
+Mindy,Yu,mindyyu0912@gmail.com,5289,209472190
+Bing,Li,bli7@stuy.edu,5154,209085513
+Eliana,Kavouriadis,kavouriadou@gmail.com,4882,207414178
+Abraham,Rohrig,abrahamrohrig@gmail.com,4228,235990579
+Zhiqing,Yang,zyang2@stuy.edu,4382,208485110
+Hanah,Jun,hjun@stuy.edu,5703,214237000
+Sophia,Atlas,satlasruggirello@stuy.edu,5648,208670497
+Caleb,Smith-Salzberg,csmithsalzberg@stuy.edu,4111,236053161
+Anika,Hashem,ahashem@stuy.edu,5094,220595227
+Kazi,Maisha,kmaisha@stuy.edu,4172,216502757
+Minseo,Kim,mkim11@stuy.edu,4154,209514256
+Kerwin,Chen,kchen37@stuy.edu,5035,209624881
+Vivian,Cribb,vcribb@stuy.edu,5983,211521372
+Victoria,Huang,victoriahuang1224@gmail.com,4850,207374364
+Samuel,Stamler,samuel.stamler@gmail.com,4598,236053195
+Perry,Wang,pwang2@stuy.edu,4320,207712407
+Nicholas,Chan,nchan1@stuy.edu,5315,211671136
+Mansi,Patel,mansipatel9000@gmail.com,5169,208857359
+Shakil,Rafi,srafi1@stuy.edu,4943,207435223
+Tasfia,Rahman,trahman6@stuy.edu,4927,207456625
+Taylor,Choi,taylor.choi.1@gmail.com,5899,208683268
+Rebecca,Zhang,rzhang6@stuy.edu,4259,209398072
+Chelsea,Cheung,ccheung5@stuy.edu,5967,208988428
+Nancy,Deng,ndeng@stuy.edu,5858,209999333
+Kristina,Kim,kkim6@stuy.edu,4183,207690579
+Tara,Khanna,tkhanna@stuy.edu,4641,208908293
+Gilvir,Gill,ggill@stuy.edu,4995,207233925
+Eric,Wong,01wong.e@gmail.com,5488,208684134
+Robin,Han,Rhan@stuy.edu,5462,209319474
+Tina,Chen,tchen9@stuy.edu,4815,207239948
+Kelly,Kang,kkang1@stuy.edu,5421,209352681
+Dushan,Arsov,arsovdushan@gmail.com,5669,214485864
+Cathy,Cai,ccai1@stuy.edu,5846,208779611
+Brian,Li,bli6@stuy.edu,4494,209029123
+Trevor,Jensen,trevorkjensen@gmail.com,5882,208652941
+Annie,Wu,anniewu247@gmail.com,4911,207453945
+Yu An,Chen,yuan.chen4@gmail.com,4489,212915458
+Rochelle,Vayntrub,rvayntrub@stuy.edu,4703,207662008
+Edward,Huang,ehuang2k@gmail.com,4771,207193277
+Raymond,Wu,rwu6@stuy.edu,5166,213983307
+Anna,Lin,annalin950@gmail.com,5852,215914250
+Ibnul,Jahan,ijahan1@stuy.edu,4231,208955195
+Puneet,Johal,pjohal@stuy.edu,5729,209008648
+Kate,Shen,wshen1@stuy.edu,5785,208993139
+Alina,Luckey,aluckey@stuy.edu,5558,224160085
+Kristina,Kim,kristinakim0119@gmail.com,5055,208734533
+Kevin,Zhang,kevinzhang0702@gmail.com,4110,209160118
+Ariel,Glazman,aglazman@stuy.edu,5534,208932558
+Allyn,Liu,allynliu@yahoo.com,4457,208742056
+Christine,Chen,cchen18@stuy.edu,4600,208627240
+Sonal,Parab,sparab@stuy.edu,4737,208054056
+Lynne,Wang,lwang7@stuy.edu,5555,208799247
+Vincent,Yang,vyang3@stuy.edu,4747,207242603
+Julia,Arancio,jarancio@stuy.edu,5677,211565965
+Shameek,Rakshit,srakshit@stuy.edu,4038,208433581
+Jessica,Rim,jrim2@stuy.edu,4325,208735399
+Tina,Wong,twong10@stuy.edu,5836,214107237
+Dylan,Kim,dkim8@stuy.edu,5115,209044239
+Ayah,Ahmad,aahmad2@stuy.edu,5908,208637447
+Ryunhye,Kim,rkim10@stuy.edu,5039,239689441
+Chloe,Doumar,chloedoumar@gmail.com,5355,209715663
+Tasnia,Haque,thaque1@stuy.edu,4702,207694134
+Ricky,Lin,rlin6@stuy.edu,5234,210959367
+Daria,Shifrina,dariashifrina@gmail.com,4899,236001525
+Joy,Ha,jha4@stuy.edu,5375,208566927
+Olivia,Chan,ochan1@stuy.edu,5879,208762112
+Inbar,Pe'er,ipeer@stuy.edu,4084,236072427
+Samantha,Ngo,sngo1@stuy.edu,4043,207757048
+Paulina,Klubok,pklubok@stuy.edu,5110,209188705
+Dimitriy,Leksanov,dleksanov@stuy.edu,4256,208813154
+Kartikay,Sharma,ksharma@stuy.edu,4019,207258716
+Sophia,Gunluk,sophia.gunluk@gmail.com,4945,209011386
+Samantha,Adrianzen,sadrianzen@stuy.edu,5621,214777948
+Yuanchu,Liu,yliu6@stuy.edu,4602,219922911
+Meredith,Hu,humeiyin@gmail.com,5546,208356410
+David,Vinokur,dvinokur@stuy.edu,5244,208988212
+Chris,Ng,cng7@stuy.edu,5973,208795823
+Lucy,Zhang,lzhang5@stuy.edu,5632,209018985
+Ava,Chen,achen25@stuy.edu,4575,208512525
+Daniella,Lorman,daniellalorman21@gmail.com,4477,207728189
+Jennifer,Liu,jliu18@stuy.edu,5989,238957203
+Apurva,Singh,asingh3@stuy.edu,5923,207640988
+Summer,Shabana,sshabana@stuy.edu,5653,209566066
+Matthew,Sabados,mhsabados@gmail.com,4556,208866962
+Damian,Wasilewicz,dwasilewicz@stuy.edu,5808,208979344
+Wavian,Li,wavli28@gmail.com,4192,208448548
+Kaitlyn,Duong,kduong@stuy.edu,5807,209946706
+Sophia,Day,sday@stuy.edu,5564,213858962
+Saahir,Ganti-Agrawal,saahir.ga@gmail.com,5856,214480832
+Jeremy,Rubin,jjmrubin@gmail.com,5702,209767730
+Tina,Lin,tlin10@stuy.edu,5447,234700516
+Jerry,Sun,jsun5@stuy.edu,5349,208891606
+Lois,Wu,lwu7@stuy.edu,5889,207286378
+Gabrielle,Umanova,gumanova2001@gmail.com,5954,209282318
+Jason,Cheung,jcheung7@stuy.edu,4393,207355280
+Tiffany,Leng,tleng@stuy.edu,4455,208230839
+Matthew,Rabinowitz,mjrabinowitz01@gmail.com,5252,214517666
+Nicholas,Li,nli5@stuy.edu,4070,207694779
+Luola,Chen,luolachen@gmail.com,4453,208688002
+Selina,Zou,selinazou2000@gmail.com,4583,207689928
+Sophie,Feng,sophieafeng@gmail.com,4786,236041026
+Ryan,Siu,rsiu@stuy.edu,4924,209018415
+Tasfia,Bashar,tasfiabashar@gmail.com,4722,208392431
+Anya,Wang,awang13@stuy.edu,4617,208882951
+Dawei,Huang,huangdawei2014@gmail.com,4095,216384123
+Mansour,Elsharawy,mansoure2011@gmail.com,4557,207765165
+Greg,Huang,greghuang2000@gmail.com,4446,208976704
+Alexandra,Fomina,alexandrafomina4@gmail.com,4682,231264003
+Andrew,Chen,andrewxinchen@gmail.com,4035,207474545
+Shivasuryan,Vummidi,ssuryan.v@gmail.com,4443,207455585

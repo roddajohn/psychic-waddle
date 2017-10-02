@@ -20,11 +20,10 @@ ORGANIZATIONS = [('arista', 'ARISTA'),
                  ('key_club', 'Key Club')]
 
 ORGANIZATIONS_FOR_SIGN_UP = [('red_cross', 'Red Cross'),
-                             ('key_club', 'Key Club'),
-                             ('arista', 'ARISTA')]
+                             ('key_club', 'Key Club')]
 
-DAYS = [('wed', 'Wednesday, October 5'),
-        ('thurs', 'Thursday, October 6')]
+DAYS = [('wed', 'Tuesday, October 10'),
+        ('thurs', 'Wednesday, October 11')]
 
 GRADES = [('freshmen', 'Freshman'),
           ('sophomore', 'Sophomore'),

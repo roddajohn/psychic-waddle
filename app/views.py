@@ -17,7 +17,7 @@ def index():
 @app.route('/create', methods=['GET', 'POST'])
 def create():
     create_form = CreateForm()
-
+    
     if create_form.validate_on_submit():
         new_user = models.User(fname = create_form.fname.data,
                                lname = create_form.lname.data,
@@ -30,7 +30,8 @@ def create():
                                permissions = '')
         new_user.set_password(create_form.password.data)
         new_user.add_permission('user')
-        new_user.wednesday = True
+        new_user.wednesday = 'wed' in create_form.days.data
+        new_user.thursday = 'thurs' in create_form.days.data
         new_user.wednesday_excused = False
         new_user.thursday_excused = False
         new_user.wednesday_status = 0
@@ -263,6 +264,7 @@ def wednesday_checkin():
         else:
             user_to_checkin.wednesday_status = 0
             flash("Unchecked %s in" % user_to_checkin.fname)
+
         db.session.commit()
         return redirect('wednesday_checkin')
 
@@ -293,7 +295,7 @@ def wednesday_checkout():
                 user_to_checkout.wednesday_status = 3
             else:
                 user_to_checkout.wednesday_status = 2
-            user_to_checkin.timestamp_wendesday_checked_out = datetime.today()
+            user_to_checkout.timestamp_wendesday_checked_out = datetime.today()
             flash("Checked %s out" % user_to_checkout.fname)
         else:
             if user_to_checkout.wednesday_status == 2:

@@ -77,7 +77,7 @@ class CreateForm(Form):
 
     grades = RadioField('grade', choices = app.config['GRADES'], validators=[DataRequired()])
 
-    four_digit = IntegerField('four_digit', validators=[DataRequired(), NumberRange(min = 1000, max = 5999)])
+    four_digit = IntegerField('four_digit', validators=[DataRequired(), NumberRange(min = 1000, max = 5000)])
     submit = SubmitField()
 
     def validate_on_submit(self):
@@ -105,6 +105,7 @@ class CreateForm(Form):
         if self.grades.data == 'freshmen' or self.grades.data == 'sophomore':
             self.grades.errors.append('Unfortunately, you must be an upperclassmen to volunteer, thanks for your interest')
             isError = True
+
 
         return not isError
 

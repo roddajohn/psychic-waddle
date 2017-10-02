@@ -46,9 +46,12 @@
 	<td>Name</td>
 	<td>Four Digit</td>
 	<td>Tuesday</td>
+	<td>Wednesday</td>
 	<td>Organizations</td>
 	<td>Checked In Tuesday</td>
 	<td>Checked Out Tuesday</td>
+	<td>Checked In Wednesday</td>
+	<td>Checked Out Wednesday</td>
 	<td>Actions</td>
       </tr>
       {% for u in users.items %}
@@ -63,10 +66,19 @@
 	    {% endif %}
 	  </td>
 	  <td>
+	    {% if u.thursday_excused %}
+	      Excused
+	    {% else %}
+	      {{ macros.render_boolean(u.thursday) }}
+	    {% endif %}
+	  </td>
+	  <td>
 	    {% for organization in u.organizations.split(',') %}{{ macros.render_label(organizations, organization)}} {% endfor %}
 	  </td>
 	  <td>{{ macros.render_boolean(u.wednesday_status == 1 or u.wednesday_status == 3) }}</td>
 	  <td>{{ macros.render_boolean(u.wednesday_status == 2 or u.wednesday_status == 3) }}</td>
+	  <td>{{ macros.render_boolean(u.thursday_status == 1 or u.thursday_status == 3) }}</td>
+	  <td>{{ macros.render_boolean(u.thursday_status == 2 or u.thursday_status == 3) }}</td>
 	  <td>
 	    <a class="btn btn-primary" href="{{ url_for('admin_user_view', user_id = u.id) }}">More Information</a>
 	  </td>
