@@ -331,6 +331,7 @@ def thursday_checkin():
         if four_digit_form.method.data == 'checkin':
             user_to_checkin.thursday_status = 1
             flash("Checked %s in" % user_to_checkin.fname)
+            user_to_checkin.timestamp_thursday_checked_in = datetime.today()
         else:
             user_to_checkin.thursday_status = 0
             flash("Unchecked %s in" % user_to_checkin.fname)
@@ -364,6 +365,7 @@ def thursday_checkout():
                 user_to_checkout.thursday_status = 3
             else:
                 user_to_checkout.thursday_status = 2
+                user_to_checkout.timestamp_wendesday_checked_out = datetime.today()
             flash("Checked %s out" % user_to_checkout.fname)
         else:
             if user_to_checkout.thursday_status == 2:
