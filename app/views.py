@@ -84,6 +84,7 @@ def add_organization(organization = ''):
         return redirect('index')
         
     user.add_organization(organization)
+    flash('Organization added')
     return redirect('user_view')
 
 @app.route('/api/remove_organization/<string:organization>', methods=['GET'])
@@ -95,6 +96,7 @@ def remove_organization(organization = ''):
         return redirect('index')
 
     user.remove_organization(organization)
+    flash('Removed organization')
     return redirect('user_view')
 
 @app.route('/toggle_wednesday')
@@ -107,6 +109,7 @@ def toggle_wednesday():
         
     user.wednesday = not user.wednesday
     db.session.commit()
+    flash('Toggled Tuesday')
     return redirect('user_view')
 
 @app.route('/toggle_thursday')
@@ -119,7 +122,8 @@ def toggle_thursday():
         
     user.thursday = not user.thursday
     db.session.commit()
-    return redirect('user_view')
+    flash('Toggled Wednesday')
+    return redirect('/user_view')
 
 @app.route('/users', methods = ['GET', 'POST'])
 @app.route('/users/<int:page>', methods = ['GET', 'POST'])
