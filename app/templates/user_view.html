@@ -74,7 +74,7 @@
 	    Excused
 	  {% else %}
 	    {{ macros.render_boolean(user.thursday) }}
-	    {% if not user.check_organization('arista') and not user.check_organization('big_sibs') %}
+	    {% if not user.check_organization('big_sibs') %}
 	      <a class="pull-right btn btn-primary {% if user.thursday %}active{% endif %}" href="{{ url_for('toggle_thursday') }}">Toggle Wednesday</a>
 	  {% endif %}
 	{% endif %}
