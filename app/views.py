@@ -83,7 +83,7 @@ def api_toggle_wednesday(user_id = 0):
         user.wednesday = not user.wednesday
         db.session.commit()
         flash('Toggled Wednesday')
-        return redirect('admin_user_view')
+        return redirect(url_for('admin_user_view', user_id = user.id))
     else:
         flash('User not found')
         return redirect('index')
@@ -96,7 +96,7 @@ def api_toggle_thursday(user_id = 0):
         user.thursday = not user.thursday
         db.session.commit()
         flash('Toggled Thursday')
-        return redirect('admin_user_view')
+        return redirect(url_for('admin_user_view', user_id = user.id))
     else:
         flash('User not found')
         return redirect('index')
