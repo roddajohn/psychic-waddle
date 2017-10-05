@@ -78,12 +78,13 @@ def logout():
 @app.route('/api/toggle_wednesday/<int:user_id>')
 def api_toggle_wednesday(user_id = 0):
     user = models.User.query.filter_by(username = session['username']).first()
-
-    if user:
-        user.wednesday = not user.wednesday
+    u = models.User.query.filter_by(id = user_id).first()
+    
+    if u:
+        u.wednesday = not u.wednesday
         db.session.commit()
-        flash('Toggled Wednesday')
-        return redirect(url_for('admin_user_view', user_id = user.id))
+        flash('Toggled Tuesday')
+        return redirect(url_for('admin_user_view', user_id = u.id))
     else:
         flash('User not found')
         return redirect('index')
@@ -91,12 +92,13 @@ def api_toggle_wednesday(user_id = 0):
 @app.route('/api/toggle_thursday/<int:user_id>')
 def api_toggle_thursday(user_id = 0):
     user = models.User.query.filter_by(username = session['username']).first()
-
-    if user:
-        user.thursday = not user.thursday
+    u = models.User.query.filter_by(id = user_id).first()
+    
+    if u:
+        u.thursday = not u.thursday
         db.session.commit()
-        flash('Toggled Thursday')
-        return redirect(url_for('admin_user_view', user_id = user.id))
+        flash('Toggled Wednesday')
+        return redirect(url_for('admin_user_view', user_id = u.id))
     else:
         flash('User not found')
         return redirect('index')
