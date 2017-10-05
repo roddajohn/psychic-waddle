@@ -75,6 +75,32 @@ def logout():
     flash('You have been logged out')
     return redirect('index')
 
+@app.route('api/toggle_wednesday/<int:user_id>')
+def api_toggle_wednesday(user_id = 0):
+    user = models.User.query.filter_by(username = session['username']).first()
+
+    if user:
+        user.wednesday = not user.wednesday
+        db.session.commit()
+        flash('Toggled Wednesday')
+        return redirect('admin_user_view')
+    else:
+        flash('User not found')
+        return redirect('index')
+
+@app.route('api/toggle_thursday/<int:user_id>')
+def api_toggle_thursday(user_id = 0):
+    user = models.User.query.filter_by(username = session['username']).first()
+
+    if user:
+        user.thursday = not user.thursday
+        db.session.commit()
+        flash('Toggled Thursday')
+        return redirect('admin_user_view')
+    else:
+        flash('User not found')
+        return redirect('index')
+    
 @app.route('/api/add_organization/<string:organization>', methods=['GET'])
 def add_organization(organization = ''):
     user = models.User.query.filter_by(username = session['username']).first()
