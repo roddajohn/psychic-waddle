@@ -75,7 +75,7 @@ def logout():
     flash('You have been logged out')
     return redirect('index')
 
-@app.route('api/toggle_wednesday/<int:user_id>')
+@app.route('/api/toggle_wednesday/<int:user_id>')
 def api_toggle_wednesday(user_id = 0):
     user = models.User.query.filter_by(username = session['username']).first()
 
@@ -88,7 +88,7 @@ def api_toggle_wednesday(user_id = 0):
         flash('User not found')
         return redirect('index')
 
-@app.route('api/toggle_thursday/<int:user_id>')
+@app.route('/api/toggle_thursday/<int:user_id>')
 def api_toggle_thursday(user_id = 0):
     user = models.User.query.filter_by(username = session['username']).first()
 
