@@ -77,7 +77,7 @@ class CreateForm(Form):
 
     grades = RadioField('grade', choices = app.config['GRADES'], validators=[DataRequired()])
 
-    four_digit = IntegerField('four_digit', validators=[DataRequired(), NumberRange(min = 1000, max = 5000)])
+    four_digit = IntegerField('four_digit', validators=[DataRequired(), NumberRange(min = 1000, max = 6000)])
     submit = SubmitField()
 
     def validate_on_submit(self):

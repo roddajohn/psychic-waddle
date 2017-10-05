@@ -43,6 +43,7 @@
 	  {% else %}
 	    {{ macros.render_boolean(u.wednesday) }}
 	    <a class="btn btn-primary pull-right" href="{{ url_for('toggle_wednesday_excused', user_id = u.id) }}">Excused</a>
+	    <a class="btn btn-primary pull-right" href="{{ url_for('toggle_wednesday', user_id = u.id) }}">Toggle</a>
 	  {% endif %}
 	</td>
       </tr>
@@ -55,6 +56,7 @@
 	  {% else %}
 	    {{ macros.render_boolean(u.thursday) }}
 	    <a class="btn btn-primary pull-right" href="{{ url_for('toggle_thursday_excused', user_id = u.id) }}">Excused</a>
+	    <a class="btn btn-primary pull-right" href="{{ url_for('toggle_thursday', user_id = u.id) }}">Toggle</a>
 	  {% endif %}
 	</td>
       </tr>
