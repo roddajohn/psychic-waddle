@@ -17,7 +17,8 @@ SECRET_KEY = 'THIS IS A SECRET KEY'
 ORGANIZATIONS = [('arista', 'ARISTA'),
                  ('big_sibs', 'Big Sibs'),
                  ('red_cross', 'Red Cross'),
-                 ('key_club', 'Key Club')]
+                 ('key_club', 'Key Club'),
+                 ('stuy_unity', 'Stuy Unity')]
 
 ORGANIZATIONS_FOR_SIGN_UP = [('red_cross', 'Red Cross'),
                              ('key_club', 'Key Club')]

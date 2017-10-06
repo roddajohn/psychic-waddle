@@ -42,7 +42,9 @@
 	{% elif search_field == "red_cross" %}
 	  {{ search_form.search_field(class_ = "form-control", value='Red Cross') }}
 	{% elif search_field == "key_club" %}
-	  {{ search_form.search_field(class_ = "form-control", value='Key Club') }}
+          {{ search_form.search_field(class_ = "form-control", value='Key Club') }}
+        {% elif search_field == "stuy_unity" %}
+          {{ search_form.search_field(class_ = "form-control", value='Stuy Unity') }}
 	{% else %}
 	  {{ search_form.search_field(class_ = "form-control", value=search_field) }}
 	{% endif %}

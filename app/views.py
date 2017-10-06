@@ -184,6 +184,8 @@ def users(page = 1, search_field = ""):
         search_field = 'big_sibs'
     elif search_field == 'Key Club':
         search_field = 'key_club'
+    elif search_field == 'Stuy Unity':
+        search_field = 'stuy_unity'
         
     if search_field == 'thursday' or search_field == 'Thursday':
         users = users.filter_by(thursday = True, thursday_excused = False)
@@ -498,6 +500,8 @@ def users_wednesday_checked_in(page = 1, search_field = ""):
         search_field = 'big_sibs'
     elif search_field == 'Key Club':
         search_field = 'key_club'
+    elif search_field == 'Stuy Unity':
+        search_field = 'stuy_unity'
         
     if search_field == 'thursday' or search_field == 'Thursday':
         users = users.filter_by(thursday = True, thursday_excused = False)
@@ -548,6 +552,8 @@ def users_wednesday_checked_out(page = 1, search_field = ""):
         search_field = 'big_sibs'
     elif search_field == 'Key Club':
         search_field = 'key_club'
+    elif search_field == 'Stuy Unity':
+        search_field = 'stuy_unity'
         
     if search_field == 'thursday' or search_field == 'Thursday':
         users = users.filter_by(thursday = True, thursday_excused = False)
@@ -598,6 +604,8 @@ def users_thursday_checked_in(page = 1, search_field = ""):
         search_field = 'big_sibs'
     elif search_field == 'Key Club':
         search_field = 'key_club'
+    elif search_field == 'Stuy Unity':
+        search_field = 'stuy_unity'
         
     if search_field == 'thursday' or search_field == 'Thursday':
         users = users.filter_by(thursday = True, thursday_excused = False)
@@ -648,6 +656,8 @@ def users_thursday_checked_out(page = 1, search_field = ""):
         search_field = 'big_sibs'
     elif search_field == 'Key Club':
         search_field = 'key_club'
+    elif search_field == 'Stuy Unity':
+        search_field = 'stuy_unity'
         
     if search_field == 'thursday' or search_field == 'Thursday':
         users = users.filter_by(thursday = True, thursday_excused = False)
@@ -697,6 +707,8 @@ def users_admins(page = 1, search_field = ""):
         search_field = 'big_sibs'
     elif search_field == 'Key Club':
         search_field = 'key_club'
+    elif search_field == 'Stuy Unity':
+        search_field = 'stuy_unity'
         
     if search_field == 'thursday' or search_field == 'Thursday':
         users = users.filter_by(thursday = True, thursday_excused = False)

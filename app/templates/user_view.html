@@ -45,6 +45,12 @@
 	      <a href="{{ url_for('add_organization', organization = 'key_club') }}" class="btn btn-primary">Key Club</a>     
 	    {% endif %}
 
+	    {% if user.check_organization('stuy_unity') %}
+	     <a href="{{ url_for('remove_organization', organization = 'stuy_unity') }}" class="btn btn-primary active">Stuy Unity</a>
+	    {% else %}
+	      <a href="{{ url_for('add_organization', organization = 'stuy_unity') }}" class="btn btn-primary">Stuy Unity</a>     
+	    {% endif %}
+
 	    {% if user.check_organization('arista') %}
 	     <a href="{{ url_for('remove_organization', organization = 'arista') }}" class="btn btn-primary active">ARISTA</a>
 	    {% else %}
