@@ -8,22 +8,21 @@ text = open(sys.argv[1]).read()
 for line in text.split('\n'):
     print line
     if file_to_parse == 'big_sibs.csv':
-        osis = int(line.split(',')[4])
+        osis = int(line.split(',')[2])
         user = models.User.query.filter_by(osis = osis).first()
-        if user:
+        if user and not user.check_organization('big_sibs'):
             user.add_organization('big_sibs')
             user.thursday = True
-        else:
-            new_user = models.User(fname = line.split(',')[0],
-                                   lname = line.split(',')[1],
+        elif not user:
+            new_user = models.User(fname = line.split(',')[1].strip().split()[0],
+                                   lname = line.split(',')[1].strip().split()[-1],
                                    nickname = "",
                                    username = line.split(',')[3],
-                                   email = line.split(',')[2],
-                                   osis = int(line.split(',')[4]),
+                                   osis = int(line.split(',')[2]),
                                    four_digit = int(line.split(',')[3]),
                                    organizations = 'big_sibs,',
                                    permissions = '')
-            new_user.set_password(line.split(',')[4])
+            new_user.set_password(line.split(',')[2])
             new_user.add_permission('user')
             new_user.wednesday = True
             new_user.thursday = True
