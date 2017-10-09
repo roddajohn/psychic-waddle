@@ -23,10 +23,13 @@ def send_email(subject, sender, recipients, text_body, html_body, reply_to = 'ar
 def send_test_email():
     with app.app_context():
         with mail.connect() as conn:
-            for user in models.User.query.filter_by(user.email != None):
+            for user in models.User.query.filter(models.User.email != None).all():
                 msg = Message('Open House -- Important Information', 
                               sender = app.config['MAIL_DEFAULT_SENDER'], 
                               recipients = [user.email], reply_to = 'aristaec1718@gmail.com', bcc=['ec@stuyarista.org'])
                 msg.body = 'HTML Error'
                 msg.html = render_template('email_to_students.html', fname = user.fname)
                 conn.send(msg)
+
+if __name__ == "__main__":
+    send_test_email()
