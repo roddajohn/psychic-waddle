@@ -329,7 +329,7 @@ def wednesday_checkout():
                 user_to_checkout.wednesday_status = 3
             else:
                 user_to_checkout.wednesday_status = 2
-            user_to_checkout.timestamp_wendesday_checked_out = datetime.today()
+            user_to_checkout.timestamp_wednesday_checked_out = datetime.today()
             flash("Checked %s out" % user_to_checkout.fname)
         else:
             if user_to_checkout.wednesday_status == 2:
@@ -399,7 +399,7 @@ def thursday_checkout():
                 user_to_checkout.thursday_status = 3
             else:
                 user_to_checkout.thursday_status = 2
-                user_to_checkout.timestamp_wendesday_checked_out = datetime.today()
+                user_to_checkout.timestamp_thursday_checked_out = datetime.today()
             flash("Checked %s out" % user_to_checkout.fname)
         else:
             if user_to_checkout.thursday_status == 2:
